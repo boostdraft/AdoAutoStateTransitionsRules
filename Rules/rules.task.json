@@ -8,6 +8,12 @@
       "allChildren": false
     },
     {
+      "ifChildState": "InReview",
+      "notParentStates": [ "Active", "Resolved" ],
+      "setParentStateTo": "Active",
+      "allChildren": false
+    },
+    {
       "ifChildState": "New",
       "notParentStates": [ "Active", "Resolved", "New" ],
       "setParentStateTo": "Active",
